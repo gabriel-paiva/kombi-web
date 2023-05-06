@@ -1,0 +1,88 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 140px);
+}
+
+main img {
+  max-width: 800px;
+  margin-left: auto;
+}
+
+main .text-container {
+  padding: 40px;
+}
+
+main .text-container h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+main .text-container ul {
+  margin-top: 20px;
+}
+
+main .text-container .button-container button {
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #EACF3F;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+
+main .text-container .button-container button:hover {
+  background-color: #EACF3Faa;
+}
+
+
+main .text-container .button-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media(max-width: 1350px) {
+  main img {
+    max-width: 600px;
+  }
+}
+
+@media(max-width: 1100px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  main img {
+    margin: 0 auto;
+  }
+
+  main .text-container h1, main .text-container h2 {
+    text-align: center;
+  }
+
+  main .text-container .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 640px) {
+  main img {
+    max-width: 400px;
+  }
+  main .text-container h1 {
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 450px) {
+  main img {
+    max-width: 280px;
+  }
+}
